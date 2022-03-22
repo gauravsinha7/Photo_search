@@ -61,7 +61,7 @@ def send_es_post_request(photo_name, bucket_name, labels):
 def lambda_handler(event, context):
     
     #print(extract_labels('brooke-lark-08bOYnH_r_E-unsplash.jpg', 'photo-album-storage'))
-    print("CI/CD pipe check")
+    #print("CI/CD pipe check")
     s3_records_data = event['Records'][0]['s3']
     bucket_name = s3_records_data['bucket']['name']
     bucket_key = urllib.parse.unquote_plus(s3_records_data['object']['key'], encoding = 'utf-8')
