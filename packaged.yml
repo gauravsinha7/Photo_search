@@ -36,7 +36,7 @@ Resources:
                   - PutObjectAcl
                 requestParameters:
                   bucketName:
-                    - storephotos3
+                    - photo-album-storage
   Bucket1:
     Type: 'AWS::S3::Bucket'
 
