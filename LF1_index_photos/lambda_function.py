@@ -34,7 +34,7 @@ def extract_labels(photo_name, bucket_name):
 
     #Getting custom labels
     s3client = boto3.client('s3')
-    metadata = s3client.head_object(Bucket='storephotos3', Key=photo_name)
+    metadata = s3client.head_object(Bucket='photo-album-storage', Key=photo_name)
     
     try:
         customlabels = metadata['ResponseMetadata']['HTTPHeaders']['x-amz-meta-customlabels'].split(',')
