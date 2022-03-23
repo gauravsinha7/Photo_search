@@ -11,7 +11,7 @@ Resources:
       Description: ''
       MemorySize: 128
       Timeout: 3
-      Role: "arn:aws:iam::91919466727:role/service-role/lf1-role-3eyhwpbk"
+      Role: "arn:aws:iam::914919466727:role/codedepl"
       Events:
         BucketEvent1:
           Type: S3
@@ -49,7 +49,7 @@ Resources:
       Description: ''
       MemorySize: 128
       Timeout: 3
-      Role: "arn:aws:iam::91919466727:role/service-role/lf1-role-3eyhwpbk"
+      Role: "arn:aws:iam::914919466727:role/codedepl"
       Events:
         CloudWatchEvent1:
           Type: CloudWatchEvent
